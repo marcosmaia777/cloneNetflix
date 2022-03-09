@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
-import Tmdb from './Tmdb';
+import React from 'react';
+import Tmdb from './Tmdb';  
 
 export default () => {
 
-    const [movieList, setMovieList] = useState([]);
+   /* const [movieList, setMovieList] = useState([]);
 
     useEffect(() => {
         const loadAll = async () => {
@@ -12,18 +12,22 @@ export default () => {
         }
     
     loadAll();
-    }, []);
+    }, []); */
 
     return (
         <div>
             <section>
-                {movie.list.map((item, key)=>(
-                    <div>
-                        {item.title}
-                    </div>
-                ))}
-                
+               
+                <p>oi</p>
             </section>
         </div>
     )
 }
+
+//, {useEffect, useState}
+
+  /* {movieList.map((item, key)=>(
+    <div>
+    {item.title}
+</div>
+))}  */
