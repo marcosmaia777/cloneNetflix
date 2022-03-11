@@ -8,13 +8,26 @@
 
 .movieRow--listarea{
     overflow: hidden;
+    padding-left: 30px;
+    white-space: nowrap
+} 
+
+.movieRow--lis{
+    width: 9999999px;
 }
 
 .movieRow--item{
     display: inline-block;
-    width: 150px;
+    width:  150px;
 }
 
 .movieRow--item img {
     width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.4s;
+    
+}
+
+.movieRow--item img:hover {
+    transform: scale(1);
 }
