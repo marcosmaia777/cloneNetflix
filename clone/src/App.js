@@ -8,7 +8,7 @@ import FeaturedMovie from './components/FeaturedMovie';
 export default () => {
 
     const [movieList, setMovieList] = useState([]);
-    const [featuredData, setfeatured] = useState ([]);
+    const [FeaturedData, setFeatured] = useState (null);
    
     useEffect(() => {
         const loadAll = async ()=> {
@@ -18,8 +18,9 @@ export default () => {
             let originals =list.filter(i=>i.slug == "originals");
             let randomChosen = Math.floor(Math.random () * (originals[0].items.results.length))
             let chosen = originals[0].items.results[randomChosen];
-            console.log(chosen);
-        }
+            let chosenInfo = await Tmdb.getMovieInfo(chosen.id, "tv");
+            setFeatured(chosenInfo);
+        }   
 
         loadAll()
 
@@ -27,8 +28,8 @@ export default () => {
    
     return(
         <div className='page'>
-            {featuredData && 
-            <FeaturedMovie item={featuredData}/>
+            {FeaturedData && 
+            <FeaturedMovie item={FeaturedData}/>
             }
 
             <section className='lists'>
