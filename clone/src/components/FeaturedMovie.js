@@ -3,6 +3,8 @@ import './FeaturedMovie.css'
 
 export default ({item}) => {
 
+    let fistDate = new Date(item._air_date);
+
     return(
         <section className="featured" style={{
         backgroundSize: 'cover',
@@ -17,6 +19,10 @@ export default ({item}) => {
                     <div className="featured--seasons">{item.number_of_seasons !== 1 ? "s" : ""} temporadas</div>
                    </div>
                    <div className="featured--description">{item.overview}</div>
+                   <div className="featured--buttons">
+
+                   </div>
+                   <div className="featured--genres"><strong>Gêneros:</strong></div>
             </div>
         </div>
         </section>
