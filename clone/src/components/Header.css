@@ -8,6 +8,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
+    background: transparent
+}
+
+header.black{
+    background-color: #141413;
 }
 
 .header--logo{
@@ -16,4 +22,13 @@ header{
 
 .header--logo img{
     height: 100%;
+}
+
+.header--user{
+    height: 35px;
+}
+
+.header--user img {
+    height: 100%;
+    border-radius: 3px;
 }
