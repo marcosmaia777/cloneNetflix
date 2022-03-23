@@ -6,7 +6,7 @@ export default () => {
        <header>
            <div className='header--logo'>
                <a href="/">
-                   <img src='https://img.elo7.com.br/product/original/2F57C45/poster-impresso-netflix-logo-basquete.jpg' alt='netflix'/>
+                   <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/800px-Netflix-new-icon.png' alt='netflix'/>
                </a>
            </div>
            <div className='header--user'>
